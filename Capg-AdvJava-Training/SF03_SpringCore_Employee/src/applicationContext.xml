@@ -1,0 +1,12 @@
+<beans>
+<bean id="empService1" class="com.capg.springcore.EmployeeService">
+<constructor-arg>
+<value>DM23</value>
+</constructor-arg>
+</bean>
+<bean id="empService2" class="com.capg.springcore.EmployeeService">
+<property name="ename">
+<value>Jack Sparrow</value>
+</property>
+</bean>
+</beans>

@@ -1,0 +1,19 @@
+package com.capg.springcore;
+
+public class ProductServiceImpl implements ProductService{
+	String product;
+	public ProductServiceImpl() {
+    }
+	public ProductServiceImpl(String product){
+		this.product = product;
+	}
+	
+	public void setProduct(String product) {
+		this.product = product;
+	}
+	
+	public void allProducts() {
+		System.out.println("Employee Name: "+product);
+	}
+
+}
