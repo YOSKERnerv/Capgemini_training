@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence 
+    xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    version="1.0"
+    xsi:schemaLocation="
+        http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+
+    <persistence-unit name="crmPU">
+
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+        <class>com.capg.assessment.entity.Customer</class>
+        <class>com.capg.assessment.entity.Address</class>
+        <class>com.capg.assessment.entity.Lead</class>
+        <class>com.capg.assessment.entity.SalesEmployee</class>
+        <class>com.capg.assessment.entity.Product</class>
+        <class>com.capg.assessment.entity.Order</class>
+        <class>com.capg.assessment.entity.SupportTicket</class>
+
+        <properties>
+
+            <property name="hibernate.connection.driver_class"
+                      value="oracle.jdbc.driver.OracleDriver"/>
+
+            <property name="hibernate.connection.url"
+                      value="jdbc:oracle:thin:@localhost:1521:xe"/>
+
+            <property name="hibernate.connection.username"
+                      value="scott"/>
+
+            <property name="hibernate.connection.password"
+                      value="tiger"/>
+
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.Oracle10gDialect"/>
+
+            <property name="hibernate.hbm2ddl.auto"
+                      value="update"/>
+
+            <property name="hibernate.show_sql"
+                      value="true"/>
+
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
