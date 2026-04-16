@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif, Arial;
+}
+
+body {
+    background-color: #e0f2e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    color: #2b423a;
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+    color: #2b423a;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: #0c7d69;
+    margin-left: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px 16px;
+    border: 1px solid #87a3a6;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #0c7d69;
+}
+
+.radio-group {
+    display: flex;
+    gap: 16px;
+}
+
+.radio-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #87a3a6;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.radio-card:has(input:checked) {
+    background-color: #e0f2e9;
+    border-color: #0c7d69;
+}
+
+.radio-card input {
+    margin-right: 12px;
+    accent-color: #0c7d69;
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.checkbox-group input {
+    accent-color: #0c7d69;
+    width: 18px;
+    height: 18px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #0c7d69;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #065e4f;
+}
+
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .radio-group {
+        flex-direction: column;
+    }
+}
+     </style>
+</head>
+<body>
+    <main class="container">
+        <form class="contact-form">
+            <h1>Contact Us</h1>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="first-name">First Name <span class="required">*</span></label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="last-name">Last Name <span class="required">*</span></label>
+                    <input type="text" id="last-name" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Query Type <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label class="radio-card">
+                        <input type="radio" name="query-type" value="general" required>
+                        <span class="custom-radio"></span>
+                        General Enquiry
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="query-type" value="support">
+                        <span class="custom-radio"></span>
+                        Support Request
+                    </label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" rows="5" required></textarea>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">I consent to being contacted by the team <span class="required">*</span></label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Applicant Details</h1></legend>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="name"><b>First Name: </b></label>
+                    <input type="test" id="name">
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastname"><b>Last Name: </b></label>
+                    <input type="test" id="lastname">
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email"><b>Email: </b></label>
+                    <input type="text" id="email">
+                    <br><br>
+                </td>
+            </tr>
+        </table>
+        <!-- <label for="name"><b>First Name: </b></label>
+        <input type="test" id="name">
+        <br><br>
+        <label for="lastname"><b>Last Name: </b></label>
+        <input type="test" id="lastname">
+        <br><br>
+        <label for="email"><b>Email: </b></label>
+        <input type="text" id="email">
+        <br><br> -->
+        <label for="gender"><b>Gender:</b></label>
+        <br><br>
+        <label for="Gender">Male</label>
+         <input type="radio" required id="Gender" name="Gender" value="Male">
+         <br>
+         <label for="Gender">Female</label>
+         <input type="radio" required id="Gender" name="Gender" value="Female">
+         <br><br>
+         <label for="contact">Contact: </label>
+         <input type="text" minlength="10" maxlength="12">
+         <br><br>
+         <label for="qualification">Qualification: </label>
+         <input type="file" id="qualification">
+         <br><br>
+         <label for="joindate">Joining Date</label>
+         <input type="date">
+         <br><br>
+         <label for="skills">Skills</label>
+         <input type="checkbox" id="skills">
+         <label for="skills">JavaScript</label>
+         <input type="checkbox" id="skills">
+         <label for="skills">Java</label>
+         <br>
+         <input type="checkbox" id="skills">
+         <label for="skills">React</label>
+         <input type="checkbox" id="skills">
+         <label for="skills">Express</label>
+         <br>
+         <input type="checkbox" id="skills">
+         <label for="skills">Python</label>
+         <input type="checkbox" id="skills">
+         <label for="skills">SQL</label>
+         <br><br>
+         <label for="exp">Year of Experience:</label>
+         <input type="range" name="exp" id="exp">
+        <br>
+        <label for="work">Work Location</label>
+        <select name="work" id="work">
+            <option value="">--Default--</option>
+            <optgroup label="South-Zone">
+                <option>Hyderabad</option>
+                <option>Bengaluru</option>
+                <option>Chennai</option>
+            </optgroup>
+            <optgroup label="North-Zone">
+                <option>Delhi</option>
+                <option>Noida</option>
+                <option>Pune</option>
+            </optgroup>
+        </select>
+        
+        <br><br>
+        <label for="add">Address</label>
+        <textarea name="add" id="add"></textarea>
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+
+    </fieldset>
+</body>
+</html>

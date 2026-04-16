@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalInfo</title>
+    <style>
+        body{
+            background: #a89f9f;
+        }
+        #main{
+            width: 500px;
+            height:300px;
+            background: rgb(254, 254, 254);
+            display: flex;
+        }
+        .steps {
+            width: 200px;
+            height: 300px;
+            margin: 50px;
+            background-image: url("./HTML/shiny-light-circle-frame-with-yellow-foliage-png_107791-17134.jpg");
+            background-size: cover;
+}
+        .information{
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+            background: rgb(139, 109, 109);
+        }
+        .information p{
+            font-size: 9px;
+        }
+        .information h1{
+            font-size: 20px;
+        }
+        .information form{
+            margin-left: 10px;
+        }
+        .steps ol{
+            list-style: none;
+            font-size: 10px;
+        }
+        .
+
+    </style>
+</head>
+<body>
+    <div id = "main">
+        <div id = "steps">
+            <ol>
+                <li>Step 1<br><b>YOUR INFO</b></li>
+                <li>Step 2<br><b>SELECT PLAN</b></li>
+                <li>Step 3<br><b>ADD-ONS</b></li>
+                <li>Step 4<br><b>SUMMARY</b></li>
+            </ol>
+        </div>
+        <div class="information">
+
+            <h1>Personal Information</h1>
+            <p>Please provide your name,email address, and phone number:</p>
+            <form action="" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <input type="submit" value="NextStep" bottom="10px" right="10px">
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

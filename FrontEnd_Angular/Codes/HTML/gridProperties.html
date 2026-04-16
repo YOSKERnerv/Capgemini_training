@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridProperties</title>
+    <style>
+        main{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+        nav {
+            background: blueviolet;
+            grid-column: 1/4;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        aside {
+            background: white;
+            grid-row: 2/4;
+            grid-column: 1/2;
+        }
+
+        .container1 {
+            background: red;
+            grid-row: 2/4;
+            grid-column: 2/3;
+        }
+
+        .container2 {
+            background: yellow;
+            grid-row: 2/4;
+            grid-column: 3/4;
+        }
+        footer{
+            background: blue;
+            grid-column: 1/4;
+        }
+        #home ,#about,#services,#contact{
+            color: rgb(247, 12, 12);
+            /* border-radius: 50%; */
+            border-color: #000;
+            border-style: double;
+            border-width: 2px;
+            padding: 10px;
+        }
+        /* button{
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+            background: transparent;
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <!-- <div class = "navelement1">Home</div>
+            <div class = "navelement2">About</div>
+            <div class = "navelement3">Services</div>
+            <div class = "navelement4">Contact</div> -->
+            <select name="Home" id="home">
+                <option value="#####">section1</option>
+                <option value="####">secton2</option>
+                <option value="####">####</option>
+                <option value="####">####</option>
+            </select>
+            <select name="About" id="about">
+                <option value="#####">About</option>
+                <option value="####">####</option>
+                    <option value="####">#####</option>
+                <option value="####">#####</option>
+            </select>
+            <select name="Services" id="services">
+                <option value="#####">Services</option>
+                <option value="####">######</option>
+                <option value="####">######</option>
+                <option value="####">#####</option>
+            </select>
+            <select name="Contact" id="contact">
+                <option value="#####">Contact</option>
+                <option value="####">######</option>
+                <option value="####">######</option>
+                <option value="####">######</option>
+            </select>
+        </nav>
+        <aside>aside</aside>
+        <div class="container1">section1</div>
+        <div class="container2">section2</div>
+        <footer>footer</footer>
+    </main>
+</body>
+</html>
